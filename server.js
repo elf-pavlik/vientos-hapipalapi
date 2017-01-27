@@ -1,5 +1,8 @@
 const Hapi = require('hapi')
-var routes = require('./src/routes')
+var routes = [
+  require('./src/routes/user'),
+  require('./src/routes/project')
+]
 
 const PORT = process.env.HAPI_PORT || 3000
 const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017'

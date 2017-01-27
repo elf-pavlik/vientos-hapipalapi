@@ -1,6 +1,6 @@
-var UserManager = require('./../../managers/user')
-var ProjectManager = require('./../../managers/project')
-var SessionController = require('./../session')
+var UserManager = require('./../models/user')
+var ProjectManager = require('./../models/project')
+var SessionController = require('./session')
 var qs = require('qs')
 var Bcrypt = require('bcrypt-nodejs')
 

@@ -1,6 +1,6 @@
 var _ = require('underscore')
-var ProjectManager = require('./../../managers/project')
-var SessionController = require('./../session')
+var ProjectManager = require('./../models/project')
+var SessionController = require('./session')
 var qs = require('qs')
 
 function ProjectController () { }

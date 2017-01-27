@@ -1,4 +1,4 @@
-var ProjectManager = require('./../managers/project')
+var ProjectManager = require('./../models/project')
 var _ = require('underscore')
 
 function SessionController () { }

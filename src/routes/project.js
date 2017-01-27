@@ -1,4 +1,4 @@
-var ProjectController = require('./../../controllers/api/project.js')
+var ProjectController = require('./../controllers/project.js')
 
 module.exports = function () {
   return [

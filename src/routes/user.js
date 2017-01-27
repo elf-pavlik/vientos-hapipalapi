@@ -1,4 +1,4 @@
-var UserController = require('./../../controllers/api/user.js')
+var UserController = require('./../controllers/user.js')
 
 module.exports = function () {
   return [
