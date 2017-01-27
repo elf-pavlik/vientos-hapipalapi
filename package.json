@@ -1,5 +1,5 @@
 {
-  "name": "vientos",
+  "name": "vientos-hapipalapi",
   "version": "1.0.0",
   "description": "Web plataform aiming to create a collaboration community between social projects, ethical companies, elements of the solidarity econonomy, and conscious citizens.",
   "main": "server.js",
@@ -10,7 +10,6 @@
     "hapi-mongodb": "^4.1.0",
     "hapi-raven": "^4.3.0",
     "multiparty": "^4.1.2",
-    "nodemailer": "^2.6.4",
     "qs": "^6.3.0",
     "underscore": "^1.8.3"
   },
@@ -27,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ralexrdz/vientos.git"
+    "url": "git+https://github.com/ehecame/vientos-hapipalapi.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ralexrdz/vientos/issues"
+    "url": "https://github.com/ehecame/vientos-hapipalapi/issues"
   },
-  "homepage": "https://github.com/ralexrdz/vientos#readme"
+  "homepage": "https://github.com/ehecame/vientos-hapipalapi#readme"
 }

@@ -1,5 +1,4 @@
 var UserManager = require('./../../managers/user')
-var CodeManager = require('./../../managers/code')
 var ProjectManager = require('./../../managers/project')
 var SessionController = require('./../session')
 var qs = require('qs')
@@ -77,6 +76,7 @@ UserController.prototype = (function () {
         reply('not Authenticated')
       }
     },
+
     existsEmail: function existsEmail (request, reply) {
       var db = request.mongo.db
       UserManager.findOne(db, {'email': request.query.email}, {_id:1}, function (res) {

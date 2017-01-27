@@ -1,7 +1,6 @@
 var _ = require('underscore')
 var ProjectManager = require('./../../managers/project')
 var SessionController = require('./../session')
-var CodeManager = require('./../../managers/code')
 var qs = require('qs')
 
 function ProjectController () { }
@@ -197,23 +196,6 @@ ProjectController.prototype = (function () {
       ProjectManager.delete(db, {'_id': request.params.id}, function (res) {
         reply(res)
       })
-    },
-    // PROJECT CODE
-    addCode: function addCode(request, reply) {
-      var db = request.mongo.db
-      var objID = request.mongo.ObjectID
-      var credentials = request.auth.credentials
-      if( credentials.scope && ( credentials.scope == 'admin' || credentials.scope.indexOf('admin')>0)){
-        var code = Math.random().toString(36).slice(2)
-        var updatedProject = {$push: {projectCodes: code}}
-        var query = {'_id': new objID(request.payload.id)}
-        ProjectManager.update(db, query, updatedProject, function (res) {
-          CodeManager.insert(db, {code: code, projectLinked: request.payload.id}, function(res){
-            reply(code)
-          })
-        })
-      } else
-        reply('notAuthorized')
     },
     // COLLABORATION
     addCollaboration: function addCollaboration (request, reply) {

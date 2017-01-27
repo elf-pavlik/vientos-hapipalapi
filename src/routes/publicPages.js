@@ -1,5 +1,4 @@
 var ProjectManager = require('./../managers/project')
-var CodeManager = require('./../managers/code')
 var SessionController = require('./../controllers/session')
 var Bcrypt = require('bcrypt-nodejs')
 var multiparty = require('multiparty')
